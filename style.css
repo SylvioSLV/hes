@@ -219,6 +219,39 @@ span{
     width: 10rem;
 }
 
+/* Style CSS de la session réalisations */
+
+.realisations{
+position: relative;
+overflow: hidden;
+}
+
+.realisations .overlay{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(21, 20, 51, 0.8);
+padding: 30px;
+display: flex;
+align-items: flex-end;
+transition: all 0.4s ease;
+opacity: 0;
+}
+
+.realisations:hover .overlay{
+opacity: 1;
+}
+
+.realisations img{
+transition: all 0.4s ease;
+}
+
+.realisations:hover img{
+transform: scale(1.1);
+}
+
 /* Style CSS de la partie contact */
 #contact{
     margin: 150px 0;
