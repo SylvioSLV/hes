@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #0d6efd;
+    --dark: #21252f;
+    --body: #888;
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+
+body{
+    font-family: Poppins, "sans-serif" ;
+    line-height: 1.7;
+}
+
+img{
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6, .display-4{
+    color: var(--dark);
+    font-weight: 700;
+}
+
+span{
+    font-weight: 700;
+}
+
+.navbar-brand{
+    font-weight: 700;
+}
+
+.navbar{
+    box-shadow: var(--box-shadow);
+}
+
+.navbar .nav-link{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.hero h1{
+    font-weight: 800;
+}
+
+.hero{
+    background-image: url(./images/reseau.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.hero::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21,20, 51, 0.9);
+    z-index: -1;
+}
+
+.xp-post a{
+    color: black;
+    text-decoration: none;
+}
+
+.xp-post i{
+    color: #0d6efd;
+}
+
+/* Style CSS de la section MOI */
+.col-img img{
+    border-radius: 20px;
+}
+
+.list{
+    font-size: 25px;
+}
+
+.list i{
+    color: var(--primary);
+}
+
+.name{
+    font-weight: 700;
+}
+
+
+/* Style CSS des sections */
+.section{
+    padding-top: 120px;
+}
+
+/* Style CSS de la section Réseaux sociaux */
+
+.social{
+    background-color: rgb(249, 249, 255);
+    margin-top: 100px;
+    padding: 20px;
+}
+
+/* Style CSS de la section mon parcours */
+.iconbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+.iconbox-dom img{
+    border-radius: 10px;
+}
+
+.iconbox-dom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 32px;
+    border-radius: 100px;
+}
+
+.card-effect{
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    transition: all 0.35s ease;
+}
+
+.card-effect:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.kouvahey{
+    height: 150px;
+}
+
+.domain{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.domain::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.domain:hover .iconbox-dom{
+    background-color: #fff;
+    color: var(--primary);
+}
+
+.domain:hover h5,
+.domain:hover p{
+    color: #fff;
+}
+
+.domain:hover::after{
+    opacity: 1;
+    top: 0;
+}
+
+/* Style CSS de la session réalisations */
+
+.realisations{
+    position: relative;
+    overflow: hidden;
+}
+
+.realisations .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 20, 51, 0.8);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.realisations:hover .overlay{
+    opacity: 1;
+}
+
+.realisations img{
+    transition: all 0.4s ease;
+}
+
+.realisations:hover img{
+    transform: scale(1.1);
+}
+
+/* Style CSS de la section formations et certifications */
+
+#formCertifs{
+    padding: 50px 0;
+}
+
+.fomation img{
+    height: 10rem;
+    width: 10rem;
+}
+
+/* Style CSS de la partie contact */
+#contact{
+    margin: 150px 0;
+}
+
+form .form-control{
+    border: transparent;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Style CSS du footer */
+
+.footer-top{
+    margin-top: 90px;
+    padding-bottom: 90px;
+    padding: 90px;
+    background-color: var(--primary);
+}
+
+.list-unstyled a{
+    text-decoration: none;
+    color: white;
+}
+
+.list-unstyled a:hover{
+    text-decoration: underline;
+    color: white;
+}
