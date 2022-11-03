@@ -89,7 +89,7 @@ span{
 }
 
 .list{
-    font-size: 25px;
+    font-size: 1rem;
 }
 
 .list i{
@@ -147,10 +147,6 @@ span{
 .card-effect:hover{
     box-shadow: none;
     transform: translateY(5px);
-}
-
-.kouvahey{
-    height: 150px;
 }
 
 .domain{
