@@ -89,7 +89,7 @@ span{
 }
 
 .list{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .list i{
@@ -225,6 +225,7 @@ span{
 .fomation img{
     height: 10rem;
     width: 10rem;
+    object-fit: cover;
 }
 
 /* Style CSS de la session réalisations */
